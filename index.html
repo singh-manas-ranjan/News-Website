@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2Z News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="https://kit.fontawesome.com/5b0030cac2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--======================== Nav-Bar ======================== -->
+        <nav>
+            <div class="main-nav container flex">
+                <a href="#" class="company-logo" id="company_logo">
+                    <img src="./assets/company_logo.png" alt="company_logo">
+                </a>       
+                <div class="nav-links flex">
+                    <ul class="flex">
+                        <li class="nav-items hover-link" id="Technology" onclick="navItemSearch('Technology')">Technology</li>
+                        <li class="nav-items hover-link" id="Finance" onclick="navItemSearch('Finance')">Finance</li>
+                        <li class="nav-items hover-link" id="Politics" onclick="navItemSearch('Politics')">Politics</li>
+                    </ul>
+                </div>
+                <div class="search-bar flex" id="search-bar">
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search A2Z...">
+                    <button class="search-button" id="searchButton">Search</button>
+                </div>
+                <div class="nav-icon" id="nav-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>  
+            </div>
+        </nav>
+
+    <!-- ======================== CARD-CONTAINER ======================== -->
+
+    <main>
+        <div class="cards_container container flex" id="cards_container">  
+
+        </div>
+    </main>
+
+    <!-- ======================== CARD-TEMPLATE ======================== -->
+    <template id="card_template">
+        <div class="card">
+            <div class="card_header">
+                <img src="https://via.placeholder.com/400x200" alt="news-mage" id="newsImage">
+            </div>
+            <div class="card_body flex">
+                <h3 id="newsTitle">News Title</h3>
+                <h6 id="newsSource">News Source 26/06/2023</h6>
+                <div class="overflow">
+                    <p id="newsDesc">Lorem ipsum dolor sit amet, quis sunt pariatur at iure tempore.</p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- ======================== SUB-FOOTER ======================== -->
+
+    <footer class="sub-footer">
+        <div class="sub-footer-container">
+            <h4 class="sub-footer-heading">World</h4>
+            <ul class="sub-footer-links">
+                <li class="sub-footer-items" id="Africa" onclick="navItemSearch('Africa')">Africa</li>
+                <li class="sub-footer-items" id="America" onclick="navItemSearch('America')">America</li>
+                <li class="sub-footer-items" id="Asia" onclick="navItemSearch('Asia')">Asia</li>
+                <li class="sub-footer-items" id="Europe" onclick="navItemSearch('Europe')">Europe</li>
+                <li class="sub-footer-items" id="Middle East" onclick="navItemSearch('Middle East')">Middle East</li>
+            </ul>
+        </div>
+        <div class="sub-footer-container">
+            <h4 class="sub-footer-heading">Business</h4>
+            <ul class="sub-footer-links">
+                <li class="sub-footer-items" id="Markets" onclick="navItemSearch('Markets')">Markets</li>
+                <li class="sub-footer-items" id="Cryptocurrency" onclick="navItemSearch('Cryptocurrency')">Cryptocurrency</li>
+                <li class="sub-footer-items" id="Media" onclick="navItemSearch('Media')">Media</li>
+                <li class="sub-footer-items" id="Finance" onclick="navItemSearch('Finance')">Finance</li>
+                <li class="sub-footer-items" id="Sensex" onclick="navItemSearch('Sensex')">Sensex</li>
+            </ul>
+        </div>
+        <div class="sub-footer-container">
+            <h4 class="sub-footer-heading">Health</h4>
+            <ul class="sub-footer-links">
+                <li class="sub-footer-items" id="Fitness" onclick="navItemSearch('Fitness')">Fitness</li>
+                <li class="sub-footer-items" id="Food" onclick="navItemSearch('Food')">Food</li>
+                <li class="sub-footer-items" id="Sleep" onclick="navItemSearch('Sleep')">Sleep</li>
+                <li class="sub-footer-items" id="Mindfulness" onclick="navItemSearch('Mindfulness')">Mindfulness</li>
+                <li class="sub-footer-items" id="Yoga" onclick="navItemSearch('Yoga')">Yoga</li>
+            </ul>
+        </div>
+        <div class="sub-footer-container">
+            <h4 class="sub-footer-heading">Style</h4>
+            <ul class="sub-footer-links">
+                <li class="sub-footer-items" id="Arts" onclick="navItemSearch('Arts')">Arts</li>
+                <li class="sub-footer-items" id="Design" onclick="navItemSearch('Design')">Design</li>
+                <li class="sub-footer-items" id="Fashion" onclick="navItemSearch('Fashion')">Fashion</li>
+                <li class="sub-footer-items" id="Luxury" onclick="navItemSearch('Luxury')">Luxury</li>
+                <li class="sub-footer-items" id="Beauty" onclick="navItemSearch('Beauty')">Beauty</li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- ======================== FOOTER ======================== -->
+
+    <footer class="footer">
+        <div class="follow-us">
+            <a href="#"><i class="fa-brands  contact-icon fa-square-facebook fa-l"></i></a>
+            <a href="#"><i class="fa-brands contact-icon  fa-square-twitter fa-l"></i></a>
+            <a href="#"><i class="fa-brands contact-icon  fa-youtube fa-l"></i></a>
+            <a href="#"><i class="fa-brands contact-icon  fa-square-instagram fa-l"></i></a>
+        </div>
+        <h6>&copy;2023 A2Z News Network. All Rights Reserved.</h6>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
