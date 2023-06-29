@@ -115,12 +115,7 @@ p{
         height: 200px;
         object-fit: fill;
     }
-
-    .overflow{
-        max-height: 100px;
-        overflow: scroll;
-    }
-
+    
     .contact-icon{
         scale: 1.3;
     }
