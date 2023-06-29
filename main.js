@@ -29,7 +29,7 @@ function bindData(articles){
     cards_container.innerHTML='';
     
     articles.forEach((article) => {
-        if(!article.urlToImage) return;
+        if(!article.urlToImage || !article.description) return;
 
         const card_clone = card_template.content.cloneNode(true);
 
